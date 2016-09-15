@@ -7,3 +7,5 @@
  */
 
 phpinfo();
+
+echo "commit file to git";
