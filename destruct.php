@@ -12,12 +12,12 @@
 class MyDestructableClass {
 
     function __construct() {
-        print "In constructor\n";
+        print "In constructor </br>";
         $this->name = "MyDestructableClass";
     }
 
     function __destruct() {
-        print "Destroying " . $this->name . "\n";
+        print "Destroying " . $this->name . "</br>";
     }
 
 }
