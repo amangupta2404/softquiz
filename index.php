@@ -1,11 +1,37 @@
 <?php
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ * How to use Magic Function __construct();
+ * 
+ * */
 
-phpinfo();
+class BaseClass {
 
-echo "commit file to git";
+    function __construct() {
+        print "In BaseClass constructor\n";
+    }
+
+}
+
+class SubClass extends BaseClass {
+
+    function __construct() {
+        parent::__construct();
+        print "In SubClass constructor\n";
+    }
+
+}
+
+class OtherSubClass extends BaseClass {
+    // inherits BaseClass's constructor
+}
+
+// In BaseClass constructor
+$obj = new BaseClass();
+
+// In BaseClass constructor
+// In SubClass constructor
+$obj = new SubClass();
+
+// In BaseClass constructor
+$obj = new OtherSubClass();
