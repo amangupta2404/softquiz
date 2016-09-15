@@ -2,6 +2,10 @@
 /*
  * How to use Magic Function __construct();
  * 
+ * print_r() is used for printing the array in human readable format. 
+ * they both are language constructs. echo returns void and print returns 1. 
+ * echo is considered slightly faster than print
+ * 
  * */
 
 class BaseClass {
