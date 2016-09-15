@@ -1,6 +1,4 @@
 <?php 
-
-
 /*
  * How to use Magic Function __construct();
  * 
