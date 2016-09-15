@@ -8,7 +8,7 @@
 class BaseClass {
 
     function __construct() {
-        print "In BaseClass constructor\n";
+        print "In BaseClass constructor </br>";
     }
 
 }
@@ -17,7 +17,7 @@ class SubClass extends BaseClass {
 
     function __construct() {
         parent::__construct();
-        print "In SubClass constructor\n";
+        print "In SubClass constructor </br>";
     }
 
 }
